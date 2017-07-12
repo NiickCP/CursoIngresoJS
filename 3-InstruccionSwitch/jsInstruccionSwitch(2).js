@@ -1,11 +1,24 @@
-function Mostrar()
+function Mostrar() 
 {
-//tomo la edad  
-var mesDelAño = document.getElementById('mes').value;
+    var mes;
+    var mes = document.getElementById("mes").value;
 
-alert (mesDelAño);
-
-
-
-
-}//FIN DE LA FUNCIÓN
+    switch (mes)
+    {
+        case "Julio":
+        case "Agosto":
+        alert ("Invierno");
+        break;
+        case "Enero":
+        case "Febrero":
+        case "Marzo":
+        case "Abril":
+        case "Mayo":
+        case "Junio":
+        alert ("Falta");
+        break;
+        default: 
+        alert ("Ya paso");
+        break;
+    } 
+}

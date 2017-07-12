@@ -1,12 +1,23 @@
-function Mostrar()
+function Mostrar() 
 {
-//tomo la edad  
-var mesDelAño = document.getElementById('mes').value;
+    var mes;
+    var mes = document.getElementById("mes").value;
 
-//alert (mesDelAño);
-	
-	
-
-
-
-}//FIN DE LA FUNCIÓN
+    switch (mes)
+    {
+        case "Febrero":
+        alert ("tiene 28 dias");
+        break;
+        case "Enero":
+        case "Marzo":
+        case "Mayo":
+        case "Julio":
+        case "Septiembre":
+        case "Diciembre":
+        alert ("tiene 31 dias");
+        break;
+        default:
+        alert ("tiene 30 dias");
+        break;
+    } 
+}
